@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Dashboard />
-      <CryptoList />
+      <CryptoList records={cryptodata} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
 import CryptoList from './components/CryptoList';
 import axios from 'axios'
-import cryptodata from './data';
+// import cryptodata from './data';
 
 function App() {
   const [data, setData] = useState([])
@@ -16,7 +16,8 @@ function App() {
       const data = await response.data.data;
       console.log("data", data)
       setData(data)
-      console.log("data", cryptodata)
+
+      // console.log("data", cryptodata) 
     } catch(error) {
       console.log(error)
     }
@@ -24,6 +25,10 @@ function App() {
 
   useEffect(() => {
     start()
+    const id = setInterval(() => {
+      start();
+    }, 300000);
+    return () => clearInterval(id);
   }, []);
 
 
@@ -32,7 +37,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Dashboard />
-      <CryptoList records={cryptodata} />
+      <CryptoList records={data} />
     </div>
   );
 }

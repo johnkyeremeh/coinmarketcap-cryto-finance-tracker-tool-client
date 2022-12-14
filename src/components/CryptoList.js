@@ -82,8 +82,6 @@ export default function CryptoList(props) {
           ) : (
             <TableCell style={{color:'green'}} align="right">{row.quote.USD.percent_change_24h.toFixed(2)}</TableCell>
           )}
-
-
               {row.quote.USD.percent_change_7d < 0 ? (
             <TableCell style={{color:'red'}} align="right">{row.quote.USD.percent_change_7d.toFixed(2)}</TableCell>
           ) : (

@@ -1,6 +1,6 @@
 import React from "react";
 
-function CryptoDetailed() {
+export default function CryptoDetailed() {
 
   return (
     <div>

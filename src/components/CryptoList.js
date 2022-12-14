@@ -13,7 +13,37 @@ import { green, red } from '@material-ui/core/colors';
 import CryptoDetailed from "./CryptoDetailed"
 
 const useStyles = makeStyles({
-  
+    root: {
+        width: '100%',
+        overflowX: 'auto'
+      },
+      table: {
+        minWidth: 650,
+      },
+      header: {
+        backgroundColor: `rgba(255, 255, 255, 1)`,  
+        boxShadow: `inset 0px -2px 0px rgba(176, 176, 176, 1)`,  
+        height: `36px`
+      },
+      name: {
+        color: `rgba(176, 176, 176, 1)`, 
+        fontStyle: `normal`,  
+        fontWeight: `700`, 
+        letterSpacing: `0px`,  
+        textDecoration: `none`,  
+        textTransform: `uppercase`, 
+      },
+      primary: {
+        fontStyle: `bold`,
+        fontWeight: `700`,
+        color: `rgba(0, 0, 0, 0.87)`,
+      },
+      positive: {
+        color: green,
+      }, 
+      negative: {
+        color: red
+      }
 });
 
 // custom function to format text
@@ -50,19 +80,19 @@ export default function CryptoList(props) {
   const classes = useStyles();
   const records = props.records
   return (
-    <Paper>
-      <Table aria-label="simple table">
-        <TableHead>
+    <Paper className={classes.root}>
+      <Table aria-label="simple table" className={classes.table}>
+        <TableHead className={classes.header}>
           <TableRow>
             <TableCell padding="checkbox" />
-            <TableCell  align="right">Rank</TableCell>
-            <TableCell  align="right">Name</TableCell>
-            <TableCell  align="right">Price (USD)</TableCell>
-            <TableCell  align="right">1 hr %</TableCell>
-            <TableCell  align="right">24 hr %</TableCell>
-            <TableCell  align="right">7 day %</TableCell>
-            <TableCell  align="right">Market Cap</TableCell>
-            <TableCell  align="right">Volume</TableCell>
+            <TableCell className={classes.name} align="right">Rank</TableCell>
+            <TableCell className={classes.name} align="right">Name</TableCell>
+            <TableCell className={classes.name} align="right">Price (USD)</TableCell>
+            <TableCell className={classes.name} align="right">1 hr %</TableCell>
+            <TableCell className={classes.name} align="right">24 hr %</TableCell>
+            <TableCell className={classes.name} align="right">7 day %</TableCell>
+            <TableCell className={classes.name} align="right">Market Cap</TableCell>
+            <TableCell className={classes.name} align="right">Volume</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

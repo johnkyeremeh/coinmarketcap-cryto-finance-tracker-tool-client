@@ -70,9 +70,9 @@ export default function CryptoList(props) {
               <TableCell align="right">{row.cmc_rank}</TableCell>
               <TableCell align="right">{row.name}</TableCell>
               <TableCell align="right">{row.quote.USD.price}</TableCell>
-              <TableCell align="right">{row.quote.USD.percent_change_1h}</TableCell>
-              <TableCell align="right">{row.quote.USD.percent_change_24h}</TableCell>
-              <TableCell  align="right">{row.quote.USD.percent_change_7d}</TableCell>
+              <TableCell align="right">{row.quote.USD.percent_change_1h.toFixed(2)}</TableCell>
+              <TableCell align="right">{row.quote.USD.percent_change_24h.toFixed(2)}</TableCell>
+              <TableCell  align="right">{row.quote.USD.percent_change_7d.toFixed(2)}</TableCell>
               <TableCell align="right">{row.quote.USD.market_cap}</TableCell>
               <TableCell align="right">{row.quote.USD.volume_24h}</TableCell>
               </ExpandableTableRow>

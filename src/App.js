@@ -11,7 +11,7 @@ function App() {
   
   async function start(){
     try {
-      const response = await axios.get(`http://localhost:4000/api`);
+      const response = await axios.get(`https://whispering-cliffs-89323.herokuapp.com/`);
       console.log("response", response)
       const data = await response.data.data;
       console.log("data", data)

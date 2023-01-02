@@ -104,7 +104,7 @@ export default function CryptoList(props) {
               row={row}
             >
               <TableCell align="right">{row.cmc_rank}</TableCell>
-              <TableCell align="right">{row.name}</TableCell>
+              <TableCell className={classes.primary} align="right">{row.name}</TableCell>
               <TableCell align="right">{formatter.format(row.quote.USD.price)}</TableCell>
               
               {row.quote.USD.percent_change_1h < 0 ? (

@@ -5,13 +5,13 @@ import Dashboard from './components/Dashboard';
 import CryptoList from './components/CryptoList';
 import axios from 'axios'
 // import cryptodata from './data';
-//cp,,emt
+
 function App() {
   const [data, setData] = useState([])
   
   async function start(){
     try {
-      const response = await axios.get(`https://whispering-cliffs-89323.herokuapp.com`);
+      const response = await axios.get(`https://whispering-cliffs-89323.herokuapp.com/api`);
       console.log("response", response)
       const data = await response.data.data;
       console.log("data", data)

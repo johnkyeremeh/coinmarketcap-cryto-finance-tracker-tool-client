@@ -32,7 +32,7 @@ function Navbar() {
     <AppBar className={classes.appBar} position="static">
       <CssBaseline />
       <Toolbar>
-        <Typography variant="h4" className={classes.logo}>TD Bank
+        <Typography variant="h4" className={classes.logo}>CoinMarketCap Top Cryptocurrence Tracker
              <a href="https://app.netlify.com/sites/stellar-gecko-5924b4" to="/" className={classes.link}>HOME</a>
         </Typography>
       </Toolbar>

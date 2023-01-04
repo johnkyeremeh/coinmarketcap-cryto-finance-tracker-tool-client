@@ -24,16 +24,17 @@ This tool allows users to easily track the performance of the top crypto currenc
 
 ### Installing
 
+#### Client 
 * git clone client: https://github.com/johnkyeremeh/coinmarketcap-cryto-finance-tracker-tool-client.git
 
-* git clone server: https://github.com/johnkyeremeh/coinmarketcap-cryto-finance-tracker-tool-server
+
+##### Available Scripts
+
+In the project directory, you can run:
 
 * npm install client: 
 
 * npm start client: 
-
-* in server node server.js 
-
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -44,12 +45,12 @@ You may also see any lint errors in the console.
 Server data can be viewed in 
 Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
-### `npm test`
+##### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -60,7 +61,25 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
-## Authors
+
+#### Server 
+* git clone server: https://github.com/johnkyeremeh/coinmarketcap-cryto-finance-tracker-tool-server
+
+
+##### Available Scripts
+
+In the project directory, you can run:
+
+### `nodemon server.js`
+
+Copy the repo
+Runs the app in the development mode.\
+Open [http://localhost:4000/](http://localhost:4000/) to view route with confirmation server is running.
+Open [http://localhost:4000/api](http://localhost:4000/api) to view api routes in your browser. View JSON elements.
+The page will reload when you make changes.\
+
+
+#### Authors
 
 Contributors names and contact info
 
@@ -71,10 +90,3 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 ## License
 
 ## Acknowledgments
-
-
-
-
-
-
-

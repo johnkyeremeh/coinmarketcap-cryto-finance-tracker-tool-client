@@ -28,11 +28,11 @@ This tool allows users to easily track the performance of the top crypto currenc
 
 * git clone server: https://github.com/johnkyeremeh/coinmarketcap-cryto-finance-tracker-tool-server
 
-npm install client: 
+* npm install client: 
 
-npm start client: 
+* npm start client: 
 
-in server node server.js 
+* in server node server.js 
 
 
 Runs the app in the development mode.\

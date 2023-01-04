@@ -1,5 +1,5 @@
 
-# Project Title
+# CoinMarketCap Cryptocurrency Tracker 
 
 A simple and handy tool for crypto currency investors to track the price, marketcap, and predict possible future price of the top 10 crypto currency.
 
